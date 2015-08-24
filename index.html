@@ -1,0 +1,87 @@
+<meta charset="utf-8" />
+<style>
+  @font-face {
+    font-family: "Fanwood";
+    src: url("Fanwood Text.otf");
+  }
+
+  body {
+    border: 100px solid beige;
+    margin: 0;
+    background: rgba(200, 200, 150, 0.1);
+    color: rgba(50, 50, 25, 0.9);
+  }
+
+  table {
+    margin-collapse: collapse;
+  }
+
+  td {
+    font-size: 30px;
+    font-family: "Fanwood";
+    padding: 50px;
+    background-clip: content-box;
+  }
+
+  p {
+    width: 350px;
+  }
+
+  .kern {
+    -webkit-font-feature-settings: "kern" 1, "dlig" 1;
+    -moz-font-feature-settings: "kern" 1, "dlig" 1;
+  }
+
+  .ss01 {
+    -webkit-font-feature-settings: "kern" 1, "dlig" 1, "ss01" 1;
+    -moz-font-feature-settings: "kern" 1, "dlig" 1, "ss01" 1;
+  }
+
+  .opbd {
+    -webkit-font-feature-settings: "kern" 1, "dlig" 1, "ss01" 1, "opbd" 1;
+    -moz-font-feature-settings: "kern" 1, "dlig" 1, "ss01" 1, "opbd" 1;
+  }
+
+  h5 {
+    font-family: "Helvetica";
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: rgba(0,0,0, 0.4);
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+<table>
+  <tr>
+    <td>
+      <div>
+        <h5>-webkit-font-feature-settings: "initial";</h5>
+        <p>
+        Hello, this is an example of "Fanwood" -- pretty flourishes, I think you'll agree.
+        </p>
+      </div>
+    </td>
+    <td>
+      <h5>-webkit-font-feature-settings: "kern" 1, "dlig" 1, "ss01" 1;</h5>
+      <p class="ss01">
+      Hello, this is an example of "Fanwood" -- pretty flourishes, I think you'll agree.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h5>-webkit-font-feature-settings: "kern" 1, "dlig" 1;</h5>
+      <p class="kern">
+      Hello, this is an example of "Fanwood" -- pretty flourishes, I think you'll agree.
+      </p>
+    </td>
+    <td>
+      <h5>-webkit-font-feature-settings: "kern" 1, "dlig" 1, "ss01" 1, "opbd" 1;</h5>
+      <p class="opbd">
+      Hello, this is an example of "Fanwood" -- pretty flourishes, I think you'll agree.
+      </p>
+    </td>
+  </tr>
+
